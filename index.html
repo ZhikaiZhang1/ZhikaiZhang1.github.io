@@ -178,7 +178,7 @@
     <tbody>
       <tr>
         <td style="padding:10px;width:100%;vertical-align:middle">
-          <heading>Publications</heading>
+          <heading>Research Projects</heading>
         </td>
       </tr>
     </tbody>
@@ -190,40 +190,46 @@
       <tbody>
         
         <td style="padding:5px;width:30%;vertical-align:middle;text-align: center;">
-          <img src='images/ijrr23/jackal_hw_ver3.png' width="220">
-          <!-- <p style="text-align: center;">Jackal UGV</p>             -->
-          <img src='images/ijrr23/active_gvn.png' width="220">
-          <p style="text-align: center;">digram of active ref gvn control policy</p>            
-          <img src='images/ijrr23/maze_gvn.png' width="220">  
-          <p style="text-align: center;">robot navigate adaptively through maze</p>                   
+          <video width="220" muted autoplay loop>
+            <source src="images/Eigenbot/6_legs_emergent.mp4" type="video/mp4">
+          </video>  
+
+          <img src='images/Eigenbot/unstable_block_sim.gif' width="220">
+          <p style="text-align: center;">Simulation walking on unstable block</p>            
+          <img src='images/Eigenbot/hill_sim.gif' width="220">
+          <p style="text-align: center;">Simulation walking on uneven hill</p>     
+               
+          <!-- <img src='images/Eigenbot/maze_gvn.png' width="220">  
+          <p style="text-align: center;">robot navigate adaptively through maze</p>                    -->
 
         </td>
   
         <td style="padding:20px;width:80%;vertical-align:middle">
           <a href="https://zhl355.github.io/ERL_EAST/">
-            <papertitle>EAST: Environment Aware Safe Tracking using Planning and Control Co-Design
+            <papertitle>Distributed Neural Control on Modular Robot
             </papertitle>
           </a>
           <br>
-          <strong>Zhichao Li</strong>, 
-          <a href="https://scholar.google.com/citations?user=ehBs-OYAAAAJ&hl=en&oi=ao">Yinzhuang Yi</a>,
-          <a href="https://www.linkedin.com/in/zhuolin-n-6b4417225/">Zhuolin Niu</a>, 
-          <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+          <strong>Zhikai Zhang</strong>, 
+          <a href="https://scholar.google.com/citations?user=ehBs-OYAAAAJ&hl=en&oi=ao">Henry Kou</a>,
+          <a href="https://www.linkedin.com/in/siqiguo047/">Siqi Guo</a>, 
+          <a href="https://www.ri.cmu.edu/ri-people/lu-li/">Lu Li</a>
+          <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/">Howie Choset</a>
           <br>
-          <em>To be submitted, 2023.</em><br>
           <a href="https://zhl355.github.io/ERL_EAST/">website</a> /
           <a href="https://arxiv.org/pdf/2310.01363.pdf">arXiv</a>
           
-          <p>This paper considers the problem of autonomous robot navigation in unknown environments with moving obstacles. 
-            We propose a new method that systematically puts planning, motion prediction and safety metric design together to achieve environmental adaptive and safe navigation. 
-            This algorithm balances optimality in travel distance and safety with respect to passing clearance. 
-            Robot adapts progress speed adaptively according to the sensed environment, being fast in wide open areas and slow down in narrow passages and taking necessary maneuvers to avoid dangerous incoming obstacles. 
-            We validate our algorithm extensively both in simulation, large-scale indoor environments and challenging real-world environments with moving obstacles.
+          <p>Conventional robotic control methods analyze the entire robot's system to consider every degree of freedom at the same time and are often computationally expensive. However, animals do not think how to walk with their brain, rather, computational units used for control are distributed into the neuron pools in their body parts. In a distributed implementation, we can reduce the computational load and create adaptive behaviors with only local sensory feedback at a Low computational complexity. This is especially relevant for modular robots where each module consists of low power MCUs that cannot compute complex control algorithms online. Our contribution in this study are three folds:<br> 
+            1. A biologically inspired distributed control framework independent of central module that can adapt to reasonable gaits terrain<br> 
+            2. A low computational cost hardware implementation on a truly distributed platform through messaging passing and local proprioceptive feedback<br> 
+            3. Our results confirms the following hypothesis for modular robotics locomotion - local proprioceptive feedback is enough for achieving stable locomotion and a adaptive behavior doesn't require complex models such as optimal control and reinforcement learning. <br> 
+            Through simulation as well as hardware experiments, we are able to showcase the prowess of distributed hardware implementation as well as neural controller's capability of generating legged locomotion gaits adaptive to various terrains, modulated only by local proprioception. We hope to extend this controller to generalize modular robot control. 
+            
           </p>
 
           <div style="text-align: center;">
             <video width="600" muted autoplay loop>
-              <source src="images/ijrr23/jackal_fah_full_2x_1080_x264_cut.mp4" type="video/mp4">
+              <source src="images/Eigenbot/6_legs_emergent.mp4" type="video/mp4">
             </video>
           </div>      
 
