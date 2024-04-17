@@ -211,13 +211,13 @@
           </a>
           <br>
           <strong>Zhikai Zhang</strong>, 
-          <a href="https://scholar.google.com/citations?user=ehBs-OYAAAAJ&hl=en&oi=ao">Henry Kou</a>,
+          <a href="https://www.ri.cmu.edu/ri-people/henry-kou/">Henry Kou</a>,
           <a href="https://www.linkedin.com/in/siqiguo047/">Siqi Guo</a>, 
-          <a href="https://www.ri.cmu.edu/ri-people/lu-li/">Lu Li</a>
+          <a href="https://www.ri.cmu.edu/ri-people/lu-li/">Lu Li</a>,
           <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/">Howie Choset</a>
           <br>
-          <a href="https://zhl355.github.io/ERL_EAST/">website</a> /
-          <a href="https://arxiv.org/pdf/2310.01363.pdf">arXiv</a>
+          <!-- <a href="https://zhl355.github.io/ERL_EAST/">website</a> /
+          <a href="https://arxiv.org/pdf/2310.01363.pdf">arXiv</a> -->
           
           <p>Conventional robotic control methods analyze the entire robot's system to consider every degree of freedom at the same time and are often computationally expensive. However, animals do not think how to walk with their brain, rather, computational units used for control are distributed into the neuron pools in their body parts. In a distributed implementation, we can reduce the computational load and create adaptive behaviors with only local sensory feedback at a Low computational complexity. This is especially relevant for modular robots where each module consists of low power MCUs that cannot compute complex control algorithms online. Our contribution in this study are three folds:<br> 
             1. A biologically inspired distributed control framework independent of central module that can adapt to reasonable gaits terrain<br> 
@@ -237,7 +237,7 @@
       </tbody>
     </table>
 
-    <!-- Automatica 2023 G-PBF -->
+    <!-- planning over control -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <td style="padding:5px;width:30%;vertical-align:middle;text-align: center;">
@@ -265,35 +265,41 @@
       </tbody>
     </table>
 
-  <!-- OJCSYS 2022 Robust Safe Flight SE(3) -->
+  <!-- Ballbot -->
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <td style="padding:20px;width:30%;vertical-align:middle;text-align: center;">
-        <img src='images/ojcsys22/warehouse3d_snapshot.png' width="220">
-        <p style="text-align: center;">hexarotor flying through warehouse</p>
+        <img src='images/Eigenbot/navigation_arms_8_shape.gif' width="200">
+        <p style="text-align: center;">Ballbot balancing with arm</p>            
+        <img src='images/Eigenbot/pushing_constrained.gif' width="300">
+        <p style="text-align: center;">Ballbot pushing on wall</p>   
       </td>
 
       <td style="padding:20px;width:80%;vertical-align:middle">
-        <a href="https://thaipduong.github.io/refgovham/">
-          <papertitle>Robust and Safe Autonomous Navigation for Systems with Learned SE(3) Hamiltonian Dynamics
+        <a href="images/ballbot/16745_ballbot_report.pdf">
+          <papertitle>Whole-body Trajectory Optimization and Tracking for Agile Maneuvers for a Single-Spherical-Wheeled Balancing Mobile Manipulator
           </papertitle>
         </a>
         <br>
-        <strong>Zhichao Li</strong>, <a href="https://thaipduong.github.io/"> Thai Duong </a>,
-        <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+       </strong> Zhikai Zhang </strong>,
+        Juan Alvarez-Padilla, <a href="https://www.ri.cmu.edu/ri-people/christian-berger/">Christian Berger</a>,
+        <a href="https://www.ri.cmu.edu/ri-people/sayan-mondal/">Sayan Mondal,
+        <a href="https://www.ri.cmu.edu/ri-people/haoru-xue/">Haoru Xue</a>
         <br>
-        <em>Accepted to IEEE Open Journal of Control Systems, 2022</em>
-        <br>
+        
+        <!-- <br>
         <a href="https://thaipduong.github.io/refgovham/">website</a> /
         <!-- <a href="https://thaipduong.github.io/refgovham/">video</a> / -->
-        <a href="https://arxiv.org/abs/2207.10840">arXiv</a>
+        <!-- <a href="https://arxiv.org/abs/2207.10840">arXiv</a> --> -->
         
-        <p>This paper synthesize an energy-shaping passivity-based controller over an learned model and analyze its robustness to uncertainty.
-          We extend our design using a reference governor to achieve 3D safe tracking control. 
-          Considering the system energy level, model uncertainty bounds, and distance to safety violation, 
-          the governor generates desired poses in SE(3) that move along the reference path adaptively to guarantee robustness and safety. 
-          Our Hamiltonian dynamics learning and tracking control techniques are demonstrated on simulated hexarotor 
-          and quadrotor robots navigating in cluttered 3D environments.
+        <p>Several ballbots have been developed, yet only a handful have been equipped with arms to enhance their maneuverability and manipulability. 
+          The incorporation of 7- DOF arms to the CMU ballbot has presented challenges in balancing and navigation due to the constantly changing center of mass. 
+          This project aims to propose a control strategy that incorporates the arms dynamics. Our approach is to use a simplified whole-body dynamics model, with only the shoulder and elbow joints moving for each arm. 
+          This reduces the number of states and accelerates convergence. We focused on two specific tasks: navigation (straight and curved paths) and pushing against a wall. 
+          Trajectories were generated using direct collocation for the navigation task and hybrid contact trajectory optimization for pushing the wall. 
+          A time-variant linear quadratic regulator (TVLQR) was designed to track the trajectories. The resulting trajectories were tracked with a mean-average error of less than 4 cm, 
+          even for the more complex path. These experiments represent an initial step towards unlocking the full potential of ballbots in dynamic and interactive environments. 
+          <br>Supplementary information, including code and animations, can be found at https://github.com/jrapudg/ocrl ballbot navigation project.
         </p>
       </td>
       
