@@ -202,6 +202,48 @@
           .image-item {
               flex: 0 0 calc(33.33% - 20px); /* Each image takes up 33.33% of the container width minus some spacing */
               max-width: calc(33.33% - 20px); /* Maximum width for each image */
+              height: 200px; /* Fixed height for each image container */
+              position: relative; /* Enable relative positioning for inner image */
+              overflow: hidden; /* Hide overflowing image */
+          }
+  
+          /* Responsive style for smaller screens */
+          @media (max-width: 768px) {
+              .image-item {
+                  flex: 0 0 calc(50% - 20px); /* Each image takes up 50% of the container width minus some spacing on smaller screens */
+                  max-width: calc(50% - 20px); /* Maximum width for each image on smaller screens */
+              }
+          }
+  
+          /* Style for images inside each image div */
+          .image-item img {
+              width: 100%; /* Make images fill the entire width of their container */
+              height: 100%; /* Make images fill the entire height of their container */
+              object-fit: cover; /* Scale the image while preserving aspect ratio, covering the container */
+              position: absolute; /* Position the image absolutely within its container */
+              top: 0;
+              left: 0;
+          }
+      </style>
+  </head>
+    <!-- <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <td style="padding: 10px; width: 100%; text-align: left;">
+        <heading>Robot Platforms</heading>
+      <style>
+          /* Style for the container div */
+          .image-container {
+              display: flex; /* Use flexbox to arrange items */
+              flex-wrap: wrap; /* Wrap items to the next line if needed */
+              justify-content: center; /* Center align items horizontally */
+              gap: 10px; /* Gap between images */
+          }
+  
+          /* Style for each image div */
+          .image-item {
+              flex: 0 0 calc(33.33% - 20px); /* Each image takes up 33.33% of the container width minus some spacing */
+              max-width: calc(33.33% - 20px); /* Maximum width for each image */
           }
   
           /* Responsive style for smaller screens */
@@ -220,7 +262,7 @@
           }
       </style>
   </head>
-  <body>
+  <body> -->
   
   <div class="image-container">
       <!-- First row of images -->
