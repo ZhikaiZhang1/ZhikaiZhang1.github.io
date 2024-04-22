@@ -219,13 +219,14 @@
           .image-item img {
               width: 100%; /* Make images fill the entire width of their container */
               height: 100%; /* Make images fill the entire height of their container */
-              object-fit: cover; /* Scale the image while preserving aspect ratio, covering the container */
+              object-fit: contain; /* Scale the image while preserving aspect ratio, fitting it within the container */
               position: absolute; /* Position the image absolutely within its container */
               top: 0;
               left: 0;
           }
       </style>
   </head>
+  <body>
     <!-- <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
