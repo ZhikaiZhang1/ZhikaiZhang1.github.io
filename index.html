@@ -84,7 +84,7 @@
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+            <!-- <tbody>
               <tr>
                 <td style="padding:10px;width:100%;vertical-align:middle">
                   <heading>Recent News</heading>
@@ -128,7 +128,7 @@
 
         </td>
       </tr>
-    </tbody>
+    </tbody> -->
   </table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -148,7 +148,7 @@
   </table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
+    <!-- <tbody>
         <tr>
             <td style="padding: 10px; width: 100%; text-align: left;">
               <heading>Robot Platforms</heading>
@@ -169,21 +169,90 @@
                     <p>CMU Ballbot</p>
                 </div>
 
-                <div style="display: inline-block; padding: 5px; width: 30%; text-align: center;">
+                <div style="display: inline; padding: 5px; width: 30%; text-align: center;">
                   <img src='images/iiwa/iiwa_300x300.avif' style="width: 100%;" alt="Jackal UGV">
                   <p>KUKA IIWA</p>
 
-                <div style="display: inline-block; padding: 5px; width: 30%; text-align: center;">
+                <div style="display: inline; padding: 5px; width: 30%; text-align: center;">
                   <img src='images/Thunderbots/thunderbots_shot.jpg' style="width: 100%;" alt="Jackal UGV">
                   <p>UBCThundrbots - Robocup</p>
 
-                <div style="display: inline-block; padding: 5px; width: 30%; text-align: center;">
+                <div style="display: inline; padding: 5px; width: 30%; text-align: center;">
                   <img src='images/robot_arm/Robot_v2.png' style="width: 100%;" alt="Jackal UGV">
                   <p>self-made 6DoF Arm</p>
               </div>
             </td>
         </tr>
-    </tbody>
+    </tbody> -->
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <td style="padding: 10px; width: 100%; text-align: left;">
+        <heading>Robot Platforms</heading>
+      <style>
+          /* Style for the container div */
+          .image-container {
+              display: flex; /* Use flexbox to arrange items */
+              flex-wrap: wrap; /* Wrap items to the next line if needed */
+              justify-content: center; /* Center align items horizontally */
+              gap: 10px; /* Gap between images */
+          }
+  
+          /* Style for each image div */
+          .image-item {
+              flex: 0 0 calc(33.33% - 20px); /* Each image takes up 33.33% of the container width minus some spacing */
+              max-width: calc(33.33% - 20px); /* Maximum width for each image */
+          }
+  
+          /* Responsive style for smaller screens */
+          @media (max-width: 768px) {
+              .image-item {
+                  flex: 0 0 calc(50% - 20px); /* Each image takes up 50% of the container width minus some spacing on smaller screens */
+                  max-width: calc(50% - 20px); /* Maximum width for each image on smaller screens */
+              }
+          }
+  
+          /* Style for images inside each image div */
+          .image-item img {
+              width: 100%; /* Make images fill the entire width of their container */
+              height: auto; /* Maintain aspect ratio */
+              display: block; /* Remove default image spacing */
+          }
+      </style>
+  </head>
+  <body>
+  
+  <div class="image-container">
+      <!-- First row of images -->
+      <div class="image-item">
+          <img src="images/Eigenbot/eigenbot_shot.png" alt="Image 1">
+          <p> Modular Robot - Eigenbot </p>
+      </div>
+      <div class="image-item">
+          <img src="images/LongJump/go1.webp" alt="Image 2">
+          <p> Unitree Go1 </p>
+      </div>
+      <div class="image-item">
+          <img src="images/ballbot/ballbot_arm_no_light.png" alt="Image 3">
+          <p> CMU Ballbot </p>
+      </div>
+  
+      <!-- Second row of images -->
+      <div class="image-item">
+          <img src="images/iiwa/iiwa_300x300.avif" alt="Image 4">
+          <p> KUKA IIWA </p>
+      </div>
+      <div class="image-item">
+          <img src="images/Thunderbots/thunderbots_shot.jpg" alt="Image 5">
+          <p> UBC Thunerbots </p>
+      </div>
+      <div class="image-item">
+          <img src="images/robot_arm/Robot_v2.png" alt="Image 6">
+          <p> Self-made DoF robot arm </p>
+      </div>
+  </div>
+  
+  </body>
 </table>
 
 
