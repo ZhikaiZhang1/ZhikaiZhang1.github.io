@@ -47,6 +47,47 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table of Contents</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: row;
+      }
+      #toc {
+          width: 200px;
+          padding: 20px;
+          background-color: #f5f5f5;
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          overflow-y: auto;
+      }
+      #content {
+          margin-left: 240px;
+          padding: 20px;
+      }
+      h2 {
+          margin-top: 40px;
+      }
+  </style>
+</head>
+<body>
+  <div id="toc">
+      <h2>Table of Contents</h2>
+      <ul>
+          <li><a href="#Research_Interests">Research_Interests</a></li>
+          <li><a href="#Robot_Platforms">Robot Platforms</a></li>
+          <li><a href="#Research_Projects">Research/Projects</a></li>
+          <li><a href="#Professional_Experiences">Professional Experiences</a></li>
+      </ul>
+  </div>
+<body>
+
 <body>
   <table
     style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -85,63 +126,17 @@
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <!-- <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Recent News</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <ul id="dataList">
-                      <li class="hidden">[Mar 2023] Our paper on <a href="http://erl.ucsd.edu/ref/Li_GCBF_Automatica23.pdf">Governor-parameterized barrier function for safe output tracking</a> has been accepted to <a href="https://www.sciencedirect.com/journal/automatica"> Automatica </a>. </li>
-                      <li class="hidden">[Jan 2023] I led safe control and planning ROS packages development on Jackal research platform at our lab.</li>
-        
-                      <li class="hidden">[Aug 2022] Our paper on <a href="http://erl.ucsd.edu/ref/Li_HamiltonianGovernor_OJCSYS22.pdf">Robust and Safe Navigation with Learned SE(3) Hamiltonian Dynamics </a> has been accepted to <a href="http://ieeecss.org/publication/open-journal-control-systems/special-sections"> OJ-CSYS. </a> </li>
-                      <li class="hidden">[Jun 2022] I started my internship at <a href="https://braincorp.com/"> Brain Corp </a> working on motion planning and docking controller design.</li>            
-                      <li class="hidden">[Jun 2022] I presented our work on <a href="https://thaipduong.github.io/refgovham/">Safe Navigation with Learned SE(3) Hamiltonian Dynamics</a> at <a href="https://l4dc.stanford.edu/"> L4DC 2022 </a>.</li>
-                      <li class="hidden">[Jun 2022] I TA'ed <a href="https://natanaso.github.io/ece276b/">ECE276B: Planning &amp; Learning in Robotics</a>. </li>
-        
-                      <li class="hidden">[Nov 2021] I have passed my qualifying exam and advanced to candidacy.</li>
-                      
-                      <li class="hidden">[Nov 2020] Our paper on Governor-parameterized barrier function has been submitted to Automatica.</li>
-                      <li class="hidden">[Jun 2020] I TA'ed <a href="https://natanaso.github.io/ece276b/">ECE276B: Planning &amp; Learning in Robotics</a>. </li>
-                      <li class="hidden">[May 2020] I presented our work on <a href="https://zhl355.github.io/ICRA2020_RG_SDDM/">Directional Reference Governor Based Safe Control</a> at <a href="https://www.icra2020.org/">ICRA 2020</a> in Paris, France (Virtual).</li>
-        
-                      <li class="hidden">[Nov 2019] I presented our lab's work at San Diego Robot Forum 2019.</li>
-                      <li class="hidden">[Sep 2019] I mentored summer intern students from the <a href="http://www.ucsd.edu/"> SRIP</a> program at UCSD developed a quadrotor research platform for our lab.</li>
-                      <li class="hidden">[Jun 2019] I TA'ed <a href="https://natanaso.github.io/ece276b/">ECE276B: Planning &amp; Learning in Robotics</a>. </li>
-                      <li class="hidden">[Apr 2019] I presented my work on safe control at UCSD Research Expo 2019.</li>
-                      
-                      <li class="hidden">[Jun 2018] I mentored summer intern students from <a href="http://www.ucsd.edu/"> SRIP</a> program at UCSD developed a racecar research platform for our lab.</li>
-                      <li class="hidden">[Sep 2016] I started my Ph.D. journey at <a href="http://www.ucsd.edu/">University of California, San Diego</a>.</li>
-        
-                      <input id="moreButton" type="button" value="More..." onclick="showMore()"/>
-                    </ul>
-
-        </td>
-      </tr>
-    </tbody> -->
-  </table>
+             </table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr>
         <td style="padding:10px;width:100%;vertical-align:middle">
-          <heading>Research Interests</heading>
+          <h2 id="Research_Interests">Research Interests</h2>
+          <!-- <heading>Research Interests</heading> -->
           <p>
             I am deeply passionate about the field of robotics, with a particular focus on mdular robots, robot learning, control and planning.
-            My current research is centered around the development of safe, and robust control and planning algorithms for
-            autonomous systems. I draw inspiration from the intricacies of the natural world,
-            harnessing these insights to craft innovative algorithms and test them on real hardware platforms.
+            My current research is centered around the Modular robot distributed control, reinforcement Learning and planning over control, 
           </p> 
         </td>
       </tr>
@@ -149,47 +144,13 @@
   </table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <!-- <tbody>
-        <tr>
-            <td style="padding: 10px; width: 100%; text-align: left;">
-              <heading>Robot Platforms</heading>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">
-                <div style="display: inline-block; padding: 5px; width: 30%; text-align: center;">
-                    <img src='images/Eigenbot/eigenbot_shot.png' style="width: 100%;" alt="Jackal UGV">
-                    <p> Modular Robot - Eigenbot </p>
-                </div>
-                <div style="display: inline-block; padding: 5px; width: 30%; text-align: center;">
-                    <img src='images/LongJump/go1.webp' style="width: 100%;" alt="Jackal UGV">
-                    <p> Unitree Go1</p>
-                </div>
-                <div style="display: inline-block; padding: 5px; width: 30%; text-align: center;">
-                    <img src='images/ballbot/ballbot_arm_no_light.png' style="width: 100%;" width="200">
-                    <p>CMU Ballbot</p>
-                </div>
-
-                <div style="display: inline; padding: 5px; width: 30%; text-align: center;">
-                  <img src='images/iiwa/iiwa_300x300.avif' style="width: 100%;" alt="Jackal UGV">
-                  <p>KUKA IIWA</p>
-
-                <div style="display: inline; padding: 5px; width: 30%; text-align: center;">
-                  <img src='images/Thunderbots/thunderbots_shot.jpg' style="width: 100%;" alt="Jackal UGV">
-                  <p>UBCThundrbots - Robocup</p>
-
-                <div style="display: inline; padding: 5px; width: 30%; text-align: center;">
-                  <img src='images/robot_arm/Robot_v2.png' style="width: 100%;" alt="Jackal UGV">
-                  <p>self-made 6DoF Arm</p>
-              </div>
-            </td>
-        </tr>
-    </tbody> -->
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <td style="padding: 10px; width: 100%; text-align: left;">
-        <heading>Robot Platforms</heading>
+        <h2 id="Robot_Platforms">Robot Platforms</h2>
+
+        <!-- <heading>Robot Platforms</heading> -->
       <style>
           /* Style for the container div */
           .image-container {
@@ -241,43 +202,6 @@
       </style>
   </head>
   <body>
-    <!-- <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <td style="padding: 10px; width: 100%; text-align: left;">
-        <heading>Robot Platforms</heading>
-      <style>
-          /* Style for the container div */
-          .image-container {
-              display: flex; /* Use flexbox to arrange items */
-              flex-wrap: wrap; /* Wrap items to the next line if needed */
-              justify-content: center; /* Center align items horizontally */
-              gap: 10px; /* Gap between images */
-          }
-  
-          /* Style for each image div */
-          .image-item {
-              flex: 0 0 calc(33.33% - 20px); /* Each image takes up 33.33% of the container width minus some spacing */
-              max-width: calc(33.33% - 20px); /* Maximum width for each image */
-          }
-  
-          /* Responsive style for smaller screens */
-          @media (max-width: 768px) {
-              .image-item {
-                  flex: 0 0 calc(50% - 20px); /* Each image takes up 50% of the container width minus some spacing on smaller screens */
-                  max-width: calc(50% - 20px); /* Maximum width for each image on smaller screens */
-              }
-          }
-  
-          /* Style for images inside each image div */
-          .image-item img {
-              width: 100%; /* Make images fill the entire width of their container */
-              height: auto; /* Maintain aspect ratio */
-              display: block; /* Remove default image spacing */
-          }
-      </style>
-  </head>
-  <body> -->
   
   <div class="image-container">
       <!-- First row of images -->
@@ -305,7 +229,7 @@
       </div>
       <div class="image-item">
           <img src="images/robot_arm/Robot_v2.png" alt="Image 6">
-          <div class="caption">6DoF robot arm</div>
+          <div class="caption">self made 6DoF robot arm</div>
       </div>
   </div>
   
@@ -317,7 +241,8 @@
     <tbody>
       <tr>
         <td style="padding:10px;width:100%;vertical-align:middle">
-          <heading>Research/Projects</heading>
+          <h2 id="Research_Projects">Research/Projects</h2>
+          <!-- <heading>Research/Projects</heading> -->
         </td>
       </tr>
     </tbody>
@@ -371,6 +296,7 @@
             <video width="600" muted autoplay loop>
               <source src="images/Eigenbot/6_legs_emergent.mp4" type="video/mp4">
             </video>
+            <p style="text-align: center;">distributed controller with 6 legs on hardware</p>
           </div>      
 
         </td>
@@ -398,8 +324,8 @@
           <a href="https://www.linkedin.com/in/grsu/"> Gregory Su</a>
           <br>
           
-          <p>Navigating challenging terrains demands a nuanced understanding of the robot's versatile capabilities. Highly agile mo-
-            bile robots endowed with complex locomotion skills, including climbing, jumping, and walking can often better handle such
+          <p>Navigating challenging terrains demands a nuanced understanding of the robot's versatile capabilities. Highly agile mobile 
+            robots endowed with complex locomotion skills, including climbing, jumping, and walking can often better handle such
             environments than traditional wheels, but planning for such systems can often be much more difficult. This paper introduces a
             comprehensive framework for real-time autonomous navigation of such motions by determining path costs using a neural network-
             based cost predictor by leveraging elevation maps and A* path planning. We demonstrate in simulation that this system can plan
@@ -595,7 +521,9 @@
     <tbody>
       <tr>
         <td style="padding:10px;width:100%;vertical-align:middle">
-          <heading>Professional Experiences</heading>
+          <h2 id="Professional_Experiences>Professional Experiences</h2>
+
+          <!-- <heading>Professional Experiences</heading> -->
         </td>
       </tr>
     </tbody>
