@@ -84,7 +84,7 @@
           <li><a href="#Research_Interests">Research Interests</a></li>
           <li><a href="#Robot_Platforms">Robot Platforms</a></li>
           <li><a href="#Research_Projects">Research/Projects</a></li>
-          <li><a href="#Professional_Experiences">Professional Experiences</a></li>
+          <li><a href="#Professional_Experiences">Experiences</a></li>
       </ul>
   </div>
 <body>
@@ -104,10 +104,14 @@
 
                     <name id="top_toc">Zhikai (Logan) Zhang</name>
                   </p>
-                  <p>I am currently a master student in the <a href="https://www.meche.engineering.cmu.edu/">Department of Mechanical
+                  <p>I recently graduated from my MSME-R program in the <a href="https://www.meche.engineering.cmu.edu/">Department of Mechanical
                      Engineering</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
-                    I work at the <a href="https://biorobotics.ri.cmu.edu/index.php">Biorobotics Lab</a> and advised by
+                    I did my research at the <a href="https://biorobotics.ri.cmu.edu/index.php">Biorobotics Lab</a> and advised by
                     Professor <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/">Howie Choset</a>. </p>
+
+                    <p>Currently I am working in Biorobotics Lab as a Research Engineer, working on Pipe inspection robot control/prototyping and modular robot learning</p>
+                    <p>I was previously an embedded software intern at <a href="https://www.garmin.com/en-US/company/">Garmin Ltd.</a></p>
+
                   <p> I received my BASc. degree from <a href="https://ece.ubc.ca/">Department of Eletrical and Computer
                     Engineering</a>, <a href"https://www.ubc.ca/">University of British Columbia</a> in 2022. </p>
                   <p style="text-align:center">
@@ -134,7 +138,7 @@
     <tbody>
       <tr>
         <td style="padding:10px;width:100%;vertical-align:middle">
-          <h2 id="Research_Interests">Research Interests</h2>
+          <h2 id="Research_Interests">Research/Career Interests</h2>
           <!-- <heading>Research Interests</heading> -->
           <p>
             I am deeply passionate about the field of robotics, with a particular focus on modular robots, robot learning, control and planning.
@@ -252,6 +256,51 @@
   </table>
   
   <!-- <hr style="width:50%;vertical-align:middle"> -->
+    <!-- Eigenbot RL -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        
+        <td style="padding:5px;width:30%;vertical-align:middle;text-align: center;">
+          <video width="600" muted autoplay loop>
+            <source src="Videos/eigenbot/Eigenbot RL.mp4" type="video/mp4">
+          </video>  
+          <p style="text-align: center;">Eigenbot walking and running on Terrain in Simulation</p>
+        </td>
+
+        <td style="padding:20px;width:80%;vertical-align:middle">
+          <!-- <a href="https://zhl355.github.io/ERL_EAST/"> -->
+            <papertitle>Modular RL on Modular Robot
+            </papertitle>
+          </a>
+          <br>
+          <strong>Zhikai (Logan) Zhang</strong>, 
+          <a href="https://www.linkedin.com/in/shankruth-balasubramaniyam-160b83239/">shankruth balasubramaniyam</a>,
+          <a href="https://www.ri.cmu.edu/ri-people/lu-li/">Lu Li</a>,
+          <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/">Howie Choset</a>
+          <br>
+          <!-- <a href="https://zhl355.github.io/ERL_EAST/">website</a> /
+          <a href="https://arxiv.org/pdf/2310.01363.pdf">arXiv</a> -->
+          
+          <p>Current RL training pipeline gives a centralised end to end policy, which requires heavy tuning and is subjected to unstable performances and local minimum. Such policy needs to be re-trained for different 
+            types of robots and is hard to collect enough data, which is lacking in the robotics field. In order to move closer to a robot foundation model, we propose to modularize different 
+            components of the robot, eg. legs, vision, arms etc. to be pre-trained on variety of tasks. Such modular networks can thus be combined into different configurations and only needs 
+            simpler fine tuning. We hope to simplify the RL design cycle and data collection pipeline with this appraoch.
+            We use reinforcement learning (PPO) to train a walking/running policy for a modular legged robot. Currently we have done the following in simulation<br>
+            1. successfully trained <br> 
+            2. Used <a href="https://manipulation-locomotion.github.io/">Regularized Online Adaptation (ROA)</a> for Sim2Real transfer of priviliged states<br> 
+            3. distillation of a depth encoder-based policy to use depth image in place of priviliged sandots<br> 
+
+            Next steps: <br>
+            1. Testing our policy on Hadware that has action delays and less agile actuators<br>
+            2. Modularize the policy to be leg/joint specific for locomotion and manipulation<br>
+            3. Testing a modularized policy ith different configurations (eg. different number of legs, loco-manipulation configurations) <br>
+          </p>   
+
+        </td>
+      </tbody>
+    </table>
+    <hr style="width:50%;vertical-align:middle">
+
     <!-- Eigenbot -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
@@ -277,7 +326,7 @@
   
         <td style="padding:20px;width:80%;vertical-align:middle">
           <!-- <a href="https://zhl355.github.io/ERL_EAST/"> -->
-            <papertitle>Distributed Neural Control on Modular Robot
+            <papertitle>Distributed Neural Control on Modular Robot (ICRA 2025 Acceptance)
             </papertitle>
           </a>
           <br>
@@ -302,7 +351,7 @@
             <!-- <video width="600" muted autoplay loop>
               <source src="images/Eigenbot/terrain_good_gif.gif" type="video/mp4">
             </video> -->
-            <img src='images/Eigenbot/terrain_good_gif.gif' width="600"
+            <img src='images/Eigenbot/terrain_good_gif.gif' width="600">
             <p style="text-align: center;">distributed controller with 6 legs on hardware with hill terrain</p>
           </div>      
 
@@ -351,6 +400,8 @@
       </tbody>
     </table>
     <hr style="width:50%;vertical-align:middle">
+
+    
   <!-- Ballbot -->
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
@@ -530,7 +581,7 @@
     <tbody>
       <tr>
         <td style="padding:10px;width:100%;vertical-align:middle">
-          <h2 id="Professional_Experiences">Professional Experiences</h2>
+          <h2 id="Professional_Experiences">Experiences</h2>
 
           <!-- <heading>Professional Experiences</heading> -->
         </td>
@@ -538,6 +589,47 @@
     </tbody>
   </table>
     
+  <!-- ARPA-E control -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      
+      <td style="padding:5px;width:30%;vertical-align:middle;text-align: center;">
+        <video width="600" muted autoplay loop>
+          <source src="Videos/ARPA-E/kalma filter_reflective_pipe.mp4" type="video/mp4">
+        </video>  
+        <p style="text-align: center;">CV based Yaw estimation in noisy reflective pipe</p>
+      <!-- </td>
+      <td style="padding:5px;width:30%;vertical-align:middle;text-align: center;"> -->
+        <video width="600" muted autoplay loop>
+          <source src="Videos/ARPA-E/Deployment_data_kalman_filter.mp4" type="video/mp4">
+        </video>  
+        <p style="text-align: center;">CV based Yaw estimation in field deployment pipe (less noisy)</p>
+      </td>
+
+      <td style="padding:20px;width:80%;vertical-align:middle">
+        <!-- <a href="https://zhl355.github.io/ERL_EAST/"> -->
+          <papertitle>Research Engineer at CMU <a href="https://biorobotics.ri.cmu.edu/index.php">Biorobotics Lab</a> and <a href="https://www.jprobotics.ai/ ">Pipe Force</a>
+          </papertitle>
+        </a>
+        <br>
+        
+        <p>Pipe Force specializes in intelligent in-pipe surveying and digitizing pipe assets using robotics and AI, providing actionable data that helps infrastructure owners minimize 
+          maintenance costs due to pipe failure. This startup stemmed from the Biorobotics Lab<br>
+          I use Computer Vision + IMU sensor fusion for localisation of the robot's odometery in the pipe environment using Kalman filter. Two pipe environments are tested using this 
+          method, as shown in the video.<br>
+          The estimated states are used in a controller for adjusting the robot's orientation, tested in simulation and harware.
+        </p>   
+        <div style="text-align: center;">
+          <video width="600" muted autoplay loop>
+            <source src="Videos/ARPA-E/ARPA-E_control_Sim_Hardware.mp4" type="video/mp4">
+          </video>
+          <p style="text-align: center;">Orienatation Control Simulation vs Hardware</p>
+        </div> 
+
+      </td>
+    </tbody>
+  </table>
+  <hr style="width:50%;vertical-align:middle">
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
