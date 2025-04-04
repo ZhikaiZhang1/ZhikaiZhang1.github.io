@@ -341,11 +341,22 @@
           <!-- <a href="https://zhl355.github.io/ERL_EAST/">website</a> /
           <a href="https://arxiv.org/pdf/2310.01363.pdf">arXiv</a> -->
           
-          <p>Conventional robotic control methods analyze the entire robot's system to consider every degree of freedom at the same time and are often computationally expensive. However, animals do not think how to walk with their brain, rather, computational units used for control are distributed into the neuron pools in their body parts. In a distributed implementation, we can reduce the computational load and create adaptive behaviors with only local sensory feedback at a Low computational complexity. This is especially relevant for modular robots where each module consists of low power MCUs that cannot compute complex control algorithms online. Our contribution in this study are three folds:<br> 
+          <!-- <p>Conventional robotic control methods analyze the entire robot's system to consider every degree of freedom at the same time and are often computationally expensive. However, animals do not think how to walk with their brain, rather, computational units used for control are distributed into the neuron pools in their body parts. In a distributed implementation, we can reduce the computational load and create adaptive behaviors with only local sensory feedback at a Low computational complexity. This is especially relevant for modular robots where each module consists of low power MCUs that cannot compute complex control algorithms online. Our contribution in this study are three folds:<br> 
             1. A biologically inspired distributed control framework independent of central module that can adapt to reasonable gaits terrain<br> 
             2. A low computational cost hardware implementation on a truly distributed platform through messaging passing and local proprioceptive feedback<br> 
             3. Our results confirms the following hypothesis for modular robotics locomotion - local proprioceptive feedback is enough for achieving stable locomotion and a adaptive behavior doesn't require complex models such as optimal control and reinforcement learning. <br> 
-            Through simulation as well as hardware experiments, we are able to showcase the prowess of distributed hardware implementation as well as neural controller's capability of generating legged locomotion gaits adaptive to various terrains, modulated only by local proprioception. We hope to extend this controller to generalize modular robot control. 
+            Through simulation as well as hardware experiments, we are able to showcase the prowess of distributed hardware implementation as well as neural controller's capability of generating legged locomotion gaits adaptive to various terrains, modulated only by local proprioception. We hope to extend this controller to generalize modular robot control.  -->
+            With relatively fewer neurons than more complex life forms, insects are still capable of producing astonishing locomotive behaviors, such as traversing diverse habitats 
+            and making rapid gait adaptations after extreme injury or autotomy. Biologists attribute this to a chain of segmental neuron clusters (ganglia) within insect nervous systems, 
+            which act as distributed, self-organizing sensorimotor control units. Inspired by the neural structure of the Carausius morosus, the common stick insect, this research 
+            introduces the Distributed Neural Locomotion Controller (D-NLC), a modular control framework utilizing local proprioceptive feedback to modulate joint-level Central Pattern 
+            Generator (CPG) signals to produce emergent locomotive behaviors. We implemented this framework using a modular legged robot with distributed joint-level embedded computing 
+            units and assessed its performance and behavior under various experimental settings. Based on real-world experiments, we observe an overall 31.3% average increase in 
+            curvilinear motion performance under external (terrain) and internal (amputation) disturbances compared to a centralized predefined gait controller. This difference is 
+            statistically significant (P<<0.05) for larger perturbations but not for single-leg amputations. Experiments with perturbation-induced leg stance duration and leg-phase-difference 
+            analysis further validated our hypothesis regarding D-NLC's role in the robust perceptive locomotion and self-emergent gait adaptation against complex unforeseen perturbations. 
+            This proposed control framework does not require any numerical optimization or weight training processes, which are time-consuming and computationally expensive. To the best of our 
+            knowledge, this framework is the first bio-inspired neural controller deployed on a distributed embedded system.
             
           </p>
 
