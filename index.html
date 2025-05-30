@@ -384,7 +384,7 @@
   
         <td style="padding:20px;width:80%;vertical-align:middle">
           <a href="images/LongJump/16_782_Longjump_Project_Report.pdf">
-            <papertitle>Path Planning for a Quadruped in Arbitrary 3-Dimensional Environments
+            <papertitle>Path Planning for a Quadruped in Arbitrary 3-Dimensional Environments With various locomotion skills: climb, jump, and walk
             </papertitle>
           </a>
           <br>
@@ -399,7 +399,8 @@
             robots endowed with complex locomotion skills, including climbing, jumping, and walking can often better handle such
             environments than traditional wheels, but planning for such systems can often be much more difficult. This paper introduces a
             comprehensive framework for real-time autonomous navigation of such motions by determining path costs using a neural network-
-            based cost predictor by leveraging elevation maps and A* path planning. We demonstrate in simulation that this system can plan
+            based cost predictor by leveraging elevation maps and A* path planning. Additionally, we trained a steerable locomotion policy, where its behaviours are conditioned on both obstacles and waypoint. 
+            We demonstrate in simulation that this system can plan
             paths for multiple different cost functions, such as minimum energy or minimum time, depending on the specified criteria.
           </p>
 
